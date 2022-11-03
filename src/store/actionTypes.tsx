@@ -1,0 +1,3 @@
+export const SET_LOGOUT_TYPE = "SET_LOGOUT_TYPE"
+
+export const SET_AUTH_TYPE = "SET_AUTH_TYPE";
