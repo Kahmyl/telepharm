@@ -38,12 +38,12 @@ export default function App() {
     return <AppLoading />;
   } else {
     return (
-      // <Provider store={store}>
-      <SafeAreaProvider>
-        <Navigation colorScheme={colorScheme} />
-        <StatusBar />
-      </SafeAreaProvider>
-      // </Provider>
+      <Provider store={store}>
+        <SafeAreaProvider>
+          <Navigation colorScheme={colorScheme} />
+          <StatusBar />
+        </SafeAreaProvider>
+      </Provider>
     );
   }
 }

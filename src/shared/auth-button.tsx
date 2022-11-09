@@ -38,7 +38,7 @@ export const ButtonText = styled.Text`
   font-family: "Inter_500Medium";
   font-style: normal;
   font-weight: 700;
-  font-size: ${verticalScale(20, height)}px;;
+  font-size: ${verticalScale(20, height)}px;
   line-height: ${verticalScale(24.2, height)}px;
   color: #ffffff;
 `;

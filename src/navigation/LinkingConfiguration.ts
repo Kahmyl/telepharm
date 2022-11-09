@@ -18,28 +18,47 @@ const linking: LinkingOptions<RootStackParamList> = {
         screens: {
           Home: {
             screens: {
-              TabOneScreen: "home",
+              Home: "home",
             },
           },
-          Search: {
+          Appointment: {
             screens: {
-              TabTwoScreen: "search",
-            },
-          },
-          Chat: {
-            screens: {
-              TabThreeScreen: "chat",
+              Appointment: "appointment",
             },
           },
           Profile: {
             screens: {
-              TabFourScreen: "profile",
+              Profile: "profile",
+            },
+          },
+        },
+      },
+      Doctor: {
+        screens: {
+          Home: {
+            screens: {
+              Home: "home",
+            },
+          },
+          Appointment: {
+            screens: {
+              Appointment: "appointment",
+            },
+          },
+          Profile: {
+            screens: {
+              Profile: "profile",
             },
           },
         },
       },
       NotFound: "*",
       Register: "register",
+      Specialty: "specialty",
+      Specialist: "specialist",
+      AddRecord: "add_record",
+      Banner: "banner",
+      Notification: "notification",
     },
   },
 };

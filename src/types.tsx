@@ -16,6 +16,13 @@ export type RootStackParamList = {
   Register: undefined;
   Main: NavigatorScreenParams<RootTabParamList> | undefined;
   NotFound: undefined;
+  Specialty: undefined;
+  Specialist: undefined;
+  AddRecord: undefined;
+  Banner: undefined;
+  Doctor: NavigatorScreenParams<DoctorTabParamList> | undefined;
+  Notification: undefined;
+  Records: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
@@ -23,8 +30,13 @@ export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
 
 export type RootTabParamList = {
   Home: undefined;
-  Search: undefined;
-  Chat: undefined;
+  Appointment: undefined;
+  Profile: undefined;
+};
+
+export type DoctorTabParamList = {
+  Home: undefined;
+  Appointment: undefined;
   Profile: undefined;
 };
 
@@ -36,6 +48,7 @@ export type RootTabScreenProps<Screen extends keyof RootTabParamList> =
 
 export type StackNavigationType = {
   navigation: any;
+  route?: any;
 };
 
 export type userLoginType = {
